@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booger to Burger AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Booger to Burger 🍔</h1>
+        <p>Upload an image of a... specimen... and our AI chef will transform its essence into a gourmet burger masterpiece.</p>
+        
+        <div class="upload-container">
+            <input type="file" id="imageUpload" accept="image/*" class="hidden">
+            <label for="imageUpload" class="upload-btn">Upload Image</label>
+        </div>
+
+        <div id="results" class="hidden">
+            <div class="result-step">
+                <h2>Your Specimen</h2>
+                <img id="uploadedImage" src="#" alt="Uploaded Image">
+            </div>
+
+            <div class="result-step" id="description-container">
+                <h2>AI Analysis</h2>
+                <div class="loader" id="desc-loader"></div>
+                <p id="boogerDescription"></p>
+            </div>
+
+            <div class="result-step" id="prompt-container">
+                <h2>Gourmet Burger Concept</h2>
+                <div class="loader" id="prompt-loader"></div>
+                <p id="burgerPrompt"></p>
+            </div>
+
+            <div class="result-step" id="burger-container">
+                <h2>Your Burger!</h2>
+                <div class="loader" id="burger-loader"></div>
+                <img id="burgerImage" src="#" alt="Generated Burger">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
