@@ -210,7 +210,7 @@ function Gallery() {
   const { data: burgers, loading } = useQuery(room.query(
     `SELECT b.id, b.originalImageUrl, b.burgerImageUrl, u.username
          FROM public.burgers b
-         JOIN public.users u ON b.user_id = u.id
+         JOIN public.user u ON b.user_id = u.id
          ORDER BY b.created_at DESC
          LIMIT 20`
   ));
