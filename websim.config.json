@@ -1,0 +1,25 @@
+{
+  "database": {
+    "schema": {
+      "burgers": {
+        "originalImageUrl": {
+          "type": "text",
+          "description": "URL of the uploaded 'specimen' image."
+        },
+        "burgerImageUrl": {
+          "type": "text",
+          "description": "URL of the AI-generated burger image."
+        },
+        "description": {
+          "type": "text",
+          "description": "The AI's description of the original image."
+        },
+        "prompt": {
+          "type": "text",
+          "description": "The prompt used to generate the burger image."
+        }
+      }
+    }
+  }
+}
+
